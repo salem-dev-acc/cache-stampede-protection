@@ -1,0 +1,20 @@
+index:
+    path: /protected
+    controller: App\Controller\DefaultController::withProtection
+
+no_protection:
+    path: /unprotected
+    controller: App\Controller\DefaultController::noProtection
+
+calls:
+    path: redis-calls
+    controller: App\Controller\DefaultController::showRedisCalls
+
+reset:
+    path: reset
+    controller: App\Controller\DefaultController:reset
+
+chart:
+    path: chart
+    controller: App\Controller\DefaultController:displayResults
+
