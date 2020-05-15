@@ -31,7 +31,7 @@ class DefaultController extends AbstractController
 
             $date = date('Y-m-d H:i:s');
 
-//            $redisConnection->lPush('list_1', $date);
+            $redisConnection->lPush('list_1', $date);
 
             return '1111';
         };
@@ -51,7 +51,7 @@ class DefaultController extends AbstractController
 
         if (FALSE === $value) {
             $date = date('Y-m-d H:i:s');
-//            $redisConnection->lPush('list_2', $date);
+            $redisConnection->lPush('list_2', $date);
 
             usleep(150 * 1000);
             $redisConnection->set('item_2', 'value');
